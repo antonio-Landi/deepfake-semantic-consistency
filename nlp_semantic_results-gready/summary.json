@@ -1,0 +1,76 @@
+{
+  "prompt_version": "v2_neutral_caption",
+  "total_pairs": 20,
+  "evaluated_pairs": 17,
+  "excluded_pairs": 3,
+  "mean_evaluable_attrs": 3.15,
+  "semantic_consistency_mean": 0.573529411764706,
+  "concept_retention_mean": 0.3429354271459535,
+  "bertscore_f1_mean": 0.956987086095308,
+  "bertscore_status": "computed",
+  "bertscore_configuration": {
+    "metric": "BERTScore_F1",
+    "candidate": "caption_attacked",
+    "reference": "caption_original",
+    "language": "en",
+    "model_type": "roberta-large",
+    "idf": false,
+    "rescale_with_baseline": false,
+    "package_version": "0.3.13"
+  },
+  "inference_configuration": {
+    "prompt_version": "v2_neutral_caption",
+    "prompt_sha256": "c6e258d76129699fe06492089228e5a88e1606b3a564f6e11fd6ae958080f93b",
+    "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "model_revision_requested": "main",
+    "model_revision_resolved": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "transformers_version": "5.14.1",
+    "torch_version": "2.5.1+cu121",
+    "device_requested": "auto",
+    "device_resolved": "cuda:0",
+    "model_dtype": "torch.bfloat16",
+    "generation": {
+      "strategy": "greedy",
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 220
+    }
+  },
+  "text_metrics_eligible_pairs": 19,
+  "caption_status_original": {
+    "accepted": 18,
+    "fallback_after_invalid_retry": 1,
+    "accepted_after_retry": 1
+  },
+  "caption_status_attacked": {
+    "accepted": 19,
+    "fallback_after_invalid_retry": 1
+  },
+  "per_attribute": {
+    "visible_smile": {
+      "evaluable": 13,
+      "matched": 10,
+      "retention": 0.7692307692307693
+    },
+    "eyeglasses": {
+      "evaluable": 2,
+      "matched": 2,
+      "retention": 1.0
+    },
+    "head_pose": {
+      "evaluable": 20,
+      "matched": 7,
+      "retention": 0.35
+    },
+    "headwear": {
+      "evaluable": 8,
+      "matched": 6,
+      "retention": 0.75
+    },
+    "background_type": {
+      "evaluable": 20,
+      "matched": 10,
+      "retention": 0.5
+    }
+  }
+}

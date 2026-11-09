@@ -1,0 +1,49 @@
+{
+  "prompt_version": "v2_neutral_caption",
+  "bertscore_model": "roberta-large",
+  "bertscore_lang": "en",
+  "total_pairs": 20,
+  "evaluated_pairs": 17,
+  "excluded_pairs": 3,
+  "mean_evaluable_attrs": 3.1,
+  "semantic_consistency_mean": 0.5833333333333334,
+  "concept_retention_mean": 0.3454658172924427,
+  "bertscore_f1_mean": 0.9575390627509669,
+  "bertscore_status": "computed",
+  "text_metrics_eligible_pairs": 19,
+  "caption_status_original": {
+    "accepted": 19,
+    "fallback_after_invalid_retry": 1
+  },
+  "caption_status_attacked": {
+    "accepted": 19,
+    "fallback_after_invalid_retry": 1
+  },
+  "per_attribute": {
+    "visible_smile": {
+      "evaluable": 13,
+      "matched": 10,
+      "retention": 0.7692307692307693
+    },
+    "eyeglasses": {
+      "evaluable": 2,
+      "matched": 2,
+      "retention": 1.0
+    },
+    "head_pose": {
+      "evaluable": 20,
+      "matched": 7,
+      "retention": 0.35
+    },
+    "headwear": {
+      "evaluable": 7,
+      "matched": 6,
+      "retention": 0.8571428571428571
+    },
+    "background_type": {
+      "evaluable": 20,
+      "matched": 10,
+      "retention": 0.5
+    }
+  }
+}

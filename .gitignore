@@ -1,0 +1,19 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+.pytest_cache/
+
+# Temporary Office and operating-system files
+~$*
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local experiments and duplicate recovery snapshots
+# Keep the reference JSON, JSONL and CSV results under version control.
+/runs/
+/nlp_semantic_results-All copy/
+recovery_backup_*/

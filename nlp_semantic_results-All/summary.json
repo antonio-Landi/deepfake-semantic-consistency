@@ -1,0 +1,83 @@
+{
+  "prompt_version": "v2_neutral_caption",
+  "total_pairs": 1600,
+  "evaluated_pairs": 1057,
+  "excluded_pairs": 543,
+  "mean_evaluable_attrs": 2.8225,
+  "semantic_consistency_mean": 0.606181015452538,
+  "concept_retention_mean": 0.2612195325485429,
+  "bertscore_f1_mean": 0.9506850324037537,
+  "bertscore_status": "computed",
+  "bertscore_configuration": {
+    "metric": "BERTScore_F1",
+    "candidate": "caption_attacked",
+    "reference": "caption_original",
+    "language": "en",
+    "model_type": "roberta-large",
+    "idf": false,
+    "rescale_with_baseline": false,
+    "package_version": "0.3.13"
+  },
+  "inference_configuration": {
+    "prompt_version": "v2_neutral_caption",
+    "prompt_sha256": "c6e258d76129699fe06492089228e5a88e1606b3a564f6e11fd6ae958080f93b",
+    "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "model_revision_requested": "main",
+    "model_revision_resolved": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "transformers_version": "5.14.1",
+    "torch_version": "2.5.1+cu121",
+    "device_requested": "auto",
+    "device_resolved": "cuda:0",
+    "model_dtype": "torch.bfloat16",
+    "generation": {
+      "strategy": "greedy",
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 220
+    },
+    "image_preprocessing": {
+      "max_image_side": 1024,
+      "applies_only_when_source_is_larger": true,
+      "resample": "lanczos",
+      "writes_source_files": false
+    }
+  },
+  "text_metrics_eligible_pairs": 1508,
+  "caption_status_original": {
+    "accepted": 1526,
+    "fallback_after_invalid_retry": 47,
+    "accepted_after_retry": 27
+  },
+  "caption_status_attacked": {
+    "accepted": 1527,
+    "fallback_after_invalid_retry": 68,
+    "accepted_after_retry": 5
+  },
+  "per_attribute": {
+    "visible_smile": {
+      "evaluable": 675,
+      "matched": 460,
+      "retention": 0.6814814814814815
+    },
+    "eyeglasses": {
+      "evaluable": 116,
+      "matched": 111,
+      "retention": 0.9568965517241379
+    },
+    "head_pose": {
+      "evaluable": 1600,
+      "matched": 922,
+      "retention": 0.57625
+    },
+    "headwear": {
+      "evaluable": 535,
+      "matched": 418,
+      "retention": 0.7813084112149533
+    },
+    "background_type": {
+      "evaluable": 1590,
+      "matched": 742,
+      "retention": 0.4666666666666667
+    }
+  }
+}

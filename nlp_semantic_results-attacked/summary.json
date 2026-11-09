@@ -1,0 +1,13 @@
+{
+  "mode": "description_only",
+  "prompt_version": "v2_neutral_caption",
+  "role": "attacked",
+  "source_dir": "C:\\Users\\Antonio\\Documents\\GitHub\\AADD_Challenge\\attacked",
+  "total_images": 20,
+  "failed_annotations": 0,
+  "caption_status_counts": {
+    "accepted": 19,
+    "fallback_after_invalid_retry": 1
+  },
+  "bertscore_status": "not_applicable_description_only"
+}
